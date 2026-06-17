@@ -1,0 +1,16 @@
+{
+  "name": "bellwether-server",
+  "version": "1.0.0",
+  "description": "Background-refreshing economic data cache for the Bellwether app. Prefetches macro series (World Bank) and economic calendar / consensus-vs-actual (Trading Economics) on a low-frequency schedule and serves them as plain JSON.",
+  "type": "module",
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "node-cron": "^3.0.3"
+  }
+}
